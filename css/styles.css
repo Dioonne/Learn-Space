@@ -1,0 +1,637 @@
+
+
+body {
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1f4a 50%, #0d0f2a 100%) !important;
+    color: #e0e7ff;
+    font-family: 'Segoe UI', 'century gothic', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+    animation: fadeSlideUp 1.2s ease-out forwards;
+    overflow-x: hidden;
+}
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;   
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;     
+        transform: translateY(0);  
+    }
+}
+
+h1, h2, p, ul, form {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #64b5f6;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #90caf9;
+    text-shadow: 0 0 8px rgba(100, 181, 246, 0.5);
+}
+
+.glass-nav a {
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: #e0e7ff;
+}
+
+.glass-nav a:hover,
+.glass-nav a.active {
+    background: rgba(100, 150, 255, 0.2);
+    color: #90caf9;
+}
+
+.glass-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 16px 24px;
+    background: linear-gradient(180deg, rgba(30, 58, 138, 0.4), rgba(15, 23, 70, 0.5));
+    backdrop-filter: blur(12px) saturate(125%);
+    border: 1px solid rgba(100, 150, 255, 0.15);
+    border-radius: 20px;
+    margin: 20px auto 40px auto;
+    width: fit-content;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+    top: 0;
+    z-index: 100;
+}
+
+.glass-nav a {
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.glass-nav a:hover, .glass-nav a.active {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+h1 {
+    color: #9d33aa;
+    text-align: center;
+    padding: 40px 0 20px 0;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px rgba(157, 51, 170, 0.7);
+}
+
+h2 {
+    color: #70a1ff;
+    border-bottom: 2px solid #3e5066;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 0 auto 30px auto;
+    max-width: 800px;
+}
+
+/* Обычные блоки с текстом */
+.heading, .ISS, .about, .research {
+    padding: 20px 40px;
+    margin-bottom: 30px;
+    background: transparent;
+    color: #e0e7ff;
+}
+
+/* NEW CLEAR CLASS NAMES FOR ALL PAGES */
+.page-title {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+
+.page-title h1 {
+    margin: 0;
+}
+
+.intro-section {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 20px 40px;
+    background: transparent;
+    color: #e0e7ff;
+}
+
+.iss-section {
+    text-align: center;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+    background: transparent;
+    color: #e0e7ff;
+}
+
+.exoplanet-intro {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px 40px;
+    background: transparent;
+    color: #e0e7ff;
+}
+
+.exoplanet-table-wrapper {
+    padding: 40px;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.exoplanet-table-wrapper table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 1px solid #3e5066;
+}
+
+.exoplanet-table-wrapper th, 
+.exoplanet-table-wrapper td {
+    background-color: rgba(44, 44, 77, 0.8);
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #3e5066;
+}
+
+.exoplanet-table-wrapper th {
+    background-color: #3e5066;
+    color: #e0e7ff;
+}
+
+.research-section {
+    max-width: 800px;
+    margin: 60px auto 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.25), rgba(15, 23, 70, 0.3));
+    border: 1px solid rgba(100, 150, 255, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+}
+
+.references-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.25), rgba(15, 23, 70, 0.3));
+    border: 1px solid rgba(100, 150, 255, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+}
+
+.references-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.references-section li {
+    margin: 12px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.references-section li:before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: #64b5f6;
+}
+
+.registration-wrapper {
+    text-align: center;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.registration-wrapper h2 {
+    margin-bottom: 20px;
+}
+
+/* SECOND PAGE ISS SPECIFIC CLASSES */
+.content-container {
+    max-width: 1000px;
+    margin: 26px auto 80px auto;
+    padding: 0 18px;
+}
+
+.iss-info {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 30px rgba(9,8,18,0.45);
+}
+
+.scroll-spacer {
+    height: 200px;
+}
+
+.mission-stats {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 30px rgba(9,8,18,0.45);
+}
+
+.mission-stats ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mission-stats li {
+    padding: 6px 0;
+    border-bottom: 1px dashed rgba(255,255,255,0.03);
+}
+
+.video-section {
+    margin: 40px 0;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.video-container video {
+    border-radius: 10px;
+    box-shadow: 0 12px 40px rgba(11,9,30,0.6);
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #70a1ff;
+}
+
+.scene-3d {
+    width: 100px;
+    height: 100px;
+    perspective: 600px; /* Глубина 3D */
+    margin: 60px auto;  /* Центрирование */
+}
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* Важно для 3D */
+    animation: spinCube 10s infinite linear; /* Запуск анимации */
+}
+@keyframes spinCube {
+    from { transform: rotateX(0deg) rotateY(0deg); }
+    to   { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+/* Грани куба */
+.face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(112, 161, 255, 0.15); /* Прозрачный синий */
+    border: 2px solid #70a1ff; /* Неоновая рамка */
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    color: #09084d;
+    box-shadow: 0 0 15px rgba(112, 161, 255, 0.3); /* Свечение */
+}
+
+/* Позиционирование граней */
+.front  { transform: rotateY(0deg) translateZ(50px); }
+.back   { transform: rotateY(180deg) translateZ(50px); }
+.right  { transform: rotateY(90deg) translateZ(50px); }
+.left   { transform: rotateY(-90deg) translateZ(50px); }
+.top    { transform: rotateX(90deg) translateZ(50px); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+/* =========================================
+   5. ТАБЛИЦЫ (Для первой страницы)
+   ========================================= */
+.exoplanet-table {
+    padding: 0 40px;
+    overflow-x: auto; /* Прокрутка на мобильных */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 1px solid #3e5066;
+}
+
+th, td {
+    background-color: rgba(44, 44, 77, 0.8); /* Полупрозрачный фон */
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #3e5066;
+}
+
+th {
+    background-color: #3e5066;
+    color: rgb(7, 27, 91);
+}
+
+.registration-form {
+    padding: 30px;
+    background-color: rgba(44, 44, 77, 0.9);
+    border: 1px solid #70a1ff;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 0 auto 50px auto;
+    box-shadow: 0 0 15px rgba(112, 161, 255, 0.2);
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #3e5066;
+    border-radius: 4px;
+    background-color: #1a1a2e;
+    color: white;
+}
+
+.registration-form input[type="submit"] {
+    background-color: #9d33aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.registration-form input[type="submit"]:hover {
+    background-color: #70a1ff;
+}
+
+:root{
+    --bg-1: #05060a
+    --bg-2: #0d0d1a; 
+    --accent-purple: #7b2cbf;
+    --accent-blue: #2b6eff;
+    --muted: rgba(240,240,255,0.06);
+    --glass: rgba(44,44,77,0.55);
+    --glass-strong: rgba(44,44,77,0.75);
+    --text: #e9eef8;
+}
+
+/* Page background gradient */
+html,body{
+    height:100%;
+}
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:var(--text);
+    background: radial-gradient(1200px at 10% 10%, var(--bg-2) 0%, #141226 25%, var(--bg-1) 100%);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+.bg-planet{
+    position: fixed;
+    inset: 0; /* cover viewport */
+    z-index: -1; /* behind content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* clicks pass through */
+    will-change: transform;
+}
+.bg-planet::part(canvas), .bg-planet canvas{
+    /* ensure model canvas sizes nicely */
+    max-width: 80vw;
+    width: 80vw;
+    max-height: 80vh;
+}
+
+/* Navigation */
+.glass-nav{
+    display:flex;
+    gap:18px;
+    padding:14px 20px;
+    align-items:center;
+    position:sticky;
+    top:12px;
+    margin:12px auto;
+    width:fit-content;
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+    border-radius:999px;
+    box-shadow: 0 6px 24px rgba(11,10,22,0.45);
+    backdrop-filter: blur(6px) saturate(120%);
+    border: 1px solid rgba(255,255,255,0.04);
+}
+.glass-nav a{
+    color:var(--text);
+    text-decoration:none;
+    padding:6px 10px;
+    border-radius:8px;
+    font-weight:600;
+}
+.glass-nav a.active,
+.glass-nav a:hover{
+    background: linear-gradient(90deg, rgba(123,44,191,0.12), rgba(43,110,255,0.08));
+    color:var(--text);
+    text-decoration:none;
+}
+header{
+    text-align:center;
+    padding:36px 18px 8px 18px;
+}
+header h1{font-size:2.4rem;margin:0 0 6px 0;color:var(--accent-purple);letter-spacing:1px}
+.subtitle{color:rgba(233,238,248,0.75);margin-top:6px}
+
+.container{
+    max-width:1000px;
+    margin:26px auto 80px auto;
+    padding:0 18px;
+}
+
+.glass-card{
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border:1px solid rgba(255,255,255,0.04);
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:18px;
+    box-shadow: 0 8px 30px rgba(9,8,18,0.45);
+}
+
+.main-info p{color:rgba(233,238,248,0.9);line-height:1.6}
+
+.stats ul{list-style:none;padding-left:0}
+.stats li{padding:6px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
+
+.video-container{display:flex;justify-content:center;margin:18px 0}
+.video-container video{border-radius:10px;box-shadow:0 12px 40px rgba(11,9,30,0.6);max-width:100%;height:auto}
+
+.ISS h2{margin-top:0;color:var(--accent-blue)}
+
+.research p{color:rgba(233,238,248,0.9)}
+
+@media (max-width:720px){
+    .bg-planet::part(canvas), .bg-planet canvas{width:120vw;opacity:0.55}
+    .glass-nav{gap:10px;padding:8px}
+    header h1{font-size:1.6rem}
+    .container{padding:0 12px}
+    .video-container{padding:0 8px}
+    .glass-card{padding:14px}
+}
+
+@media (max-width:420px){
+    .bg-planet{display:none}
+}
+
+.planets-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.planet-card {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.3), rgba(123, 44, 191, 0.15));
+    border: 1px solid rgba(100, 150, 255, 0.2);
+    border-radius: 12px;
+    padding: 24px;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.planet-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(100, 150, 255, 0.4);
+    box-shadow: 0 12px 30px rgba(100, 150, 255, 0.2);
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.5), rgba(123, 44, 191, 0.25));
+}
+
+.planet-card h2 {
+    color: #64b5f6;
+    border-bottom: 2px solid rgba(100, 150, 255, 0.3);
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+}
+
+.planet-card p {
+    color: #d0d8ff;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.planet-card strong {
+    color: #90caf9;
+}
+
+.research {
+    max-width: 800px;
+    margin: 60px auto 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.25), rgba(15, 23, 70, 0.3));
+    border: 1px solid rgba(100, 150, 255, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+}
+
+.references {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.25), rgba(15, 23, 70, 0.3));
+    border: 1px solid rgba(100, 150, 255, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+}
+
+.references ul {
+    list-style: none;
+    padding: 0;
+}
+
+.references li {
+    margin: 12px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.references li:before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: #64b5f6;
+}
+
+.references a {
+    color: #64b5f6;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.references a:hover {
+    color: #90caf9;
+    text-shadow: 0 0 8px rgba(100, 181, 246, 0.5);
+    text-decoration: underline;
+}
+
+/* Responsive for tablets and smaller screens */
+@media (max-width: 768px) {
+    .planets-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        padding: 0 12px;
+    }
+    
+    .planet-card {
+        padding: 16px;
+    }
+    
+    .planet-card h2 {
+        font-size: 1.3rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .planets-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .planet-card {
+        padding: 12px;
+    }
+}

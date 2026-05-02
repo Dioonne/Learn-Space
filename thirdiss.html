@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS - International Space Station</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+
+<body class="page-fade-in">
+    <model-viewer 
+        class="bg-planet"
+        src="assets/earth.glb" 
+        alt="3D Space Planet" 
+        auto-rotate 
+        rotation-per-second="5deg"
+        disable-zoom
+        camera-orbit="0deg 75deg 105%"
+        interaction-prompt="none">
+    </model-viewer>
+
+    <nav class="glass-nav">
+        <a href="index.html">Home</a>
+        <a href="planets2.html">Planets</a>
+        <a href="thirdiss.html" class="active">ISS</a>
+    </nav>
+
+    <header class="page-title">
+        <h1>International Space Station</h1>
+        <p class="subtitle">Humanity's home in orbit</p>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <div class="content-container">
+        
+        <!-- ISS INFO SECTION -->
+        <section class="iss-info">
+            <h2>Life on the Station</h2>
+            <p>The ISS is a modular space station in low Earth orbit. It represents a multinational collaborative project involving five participating space agencies: NASA, Roscosmos, JAXA, ESA, and CSA.</p>
+            <br>
+            <p>Imagine waking up and seeing 16 sunrises every day. That is the reality for astronauts aboard the ISS, which travels at a speed of 17,500 mph.</p>
+        </section>
+
+        <div class="scroll-spacer"></div>
+
+        <section class="mission-stats">
+            <h3>Mission Stats</h3>
+            <ul>
+                <li><strong>Speed:</strong> 7.66 km/s</li>
+                <li><strong>Orbits per day:</strong> 15.54</li>
+                <li><strong>Altitude:</strong> ~408 km</li>
+                <li><strong>Crew:</strong> Usually 7 people</li>
+            </ul>
+        </section>
+
+        <!-- ISS VIDEO SECTION -->
+        <div class="video-section">
+            <h2>ISS Overview Video</h2>
+            <div class="video-container">
+                <video controls width="600" preload="metadata">
+                    <source src="assets/ISS.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p><a href="https://www.youtube.com/watch?v=Ei-TcECJVXU" target="_blank" rel="noopener">Watch on YouTube</a></p>
+            </div>
+        </div>
+
+        <!-- RESEARCH SECTION -->
+        <section class="research-section">
+            <h2>Research</h2>
+            <p>The station serves as a microgravity and space environment research laboratory in which scientific research is conducted in astrobiology, astronomy, meteorology, physics, and other fields.</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
